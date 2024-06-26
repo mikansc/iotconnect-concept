@@ -1,0 +1,106 @@
+{
+  "a_test": "Test string",
+  "button": {
+    "home": "Home",
+    "devices": "Devices",
+    "add": "Add",
+    "close": "Close",
+    "cancel": "Cancel",
+    "enter": "Sign in",
+    "save": "Save",
+    "search": "Search",
+    "sign_out": "Sign out",
+    "go_back": "Go back",
+    "edit": "Edit",
+    "sign_up": "Register"
+  },
+  "device": {
+    "property": {
+      "virtual_id": "Virtual ID",
+      "ip_address": "IP address",
+      "mac_address": "MAC address",
+      "signal": "Signal",
+      "toggle": {
+        "label": "On"
+      }
+    }
+  },
+  "filter": {
+    "label": "Search for device",
+    "placeholder": "type the name of a device...",
+    "clear": "Clean"
+  },
+  "heading": {
+    "my_devices": "My Devices",
+    "add_device": "Add Device",
+    "all_devices": "All Devices",
+    "add_user": "Register User",
+    "access": "Access",
+    "user_profile": "User Profile",
+    "user_data": "Personal Data",
+    "user_address": "Address"
+  },
+  "input": {
+    "default_select": "Select...",
+    "username": "User",
+    "username_placeholder": "enter your email...",
+    "submit": "Sign in",
+    "error": "Invalid username or password",
+    "local": "Local",
+    "local_placeholder": "select location...",
+    "room": "Room",
+    "room_placeholder": "Bedroom, living room, kitchen, etc..."
+  },
+  "misc": {
+    "wait": "Wait...",
+    "loading": "Loading...",
+    "no_devices": "There are no devices to display.",
+    "full_date": "{{date, FULL_DATE}}",
+    "temperature": "{{value, TEMPERATURE(unit: unit)}}"
+  },
+  "question": {
+    "is_on": "Is on?"
+  },
+  "user": {
+    "greeting": "Hi, {{name}}!",
+    "fullName": "Full name",
+    "fullName_placeholder": "enter your full name...",
+    "phone": "telephone",
+    "phone_placeholder": "enter your phone number...",
+    "email": "Email",
+    "email_placeholder": "type your email...",
+    "password": "Password",
+    "password_placeholder": "enter your password...",
+    "passwordConfirm": "Confirm the password",
+    "passwordConfirm_placeholder": "type your password again...",
+    "photoUrl": "Photo URL",
+    "photoUrl_placeholder": "enter the URL of the photo...",
+    "address": {
+      "street": "Address",
+      "street_placeholder": "enter the address...",
+      "number": "Number",
+      "number_placeholder": "enter the number...",
+      "neighborhood": "Neighborhood",
+      "neighborhood_placeholder": "type the neighborhood...",
+      "compliment": "Complement",
+      "compliment_placeholder": "type the add-on...",
+      "city": "town",
+      "city_placeholder": "enter the city...",
+      "state": "statehood",
+      "state_placeholder": "enter the state...",
+      "zip_code": "ZIP CODE",
+      "zip_code_placeholder": "enter zip code..."
+    }
+  },
+  "weather": {
+    "temperature_value": "{{value, TEMPERATURE(unit: unit)}}",
+    "minTemperature_value": "{{value, TEMPERATURE(unit: unit)}}",
+    "maxTemperature_value": "{{value, TEMPERATURE(unit: unit)}}",
+    "thermalSensation_value": "{{value, TEMPERATURE(unit: unit)}}",
+    "humidity_value": "{{value}}%",
+    "updatedAt_value": "{{date, datetime}}",
+    "thermal_sensation": "Thermal Sensation",
+    "humidity": "Humidity",
+    "updated_at": "Updated on"
+  }
+}

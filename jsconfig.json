@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "types": ["vitest/globals"],
+    "baseUrl": "./src",
+    "module": "esnext",
+    "target": "es2020",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "paths": {
+      "@routes": ["./routes"],
+      "@services": ["./services"],
+      "@pages": ["./components/pages"],
+      "@templates": ["./components/templates"],
+      "@atoms": ["./components/atoms"],
+      "@molecules": ["./components/molecules"],
+      "@organisms": ["./components/organisms"],
+      "@contexts": ["./contexts"],
+      "@hooks": ["./hooks"],
+      "@utils": ["./utils"],
+      "@test-utils": ["./test-utils"],
+      "@validations": ["./validations"]
+    }
+  },
+  "include": ["./src"]
+}

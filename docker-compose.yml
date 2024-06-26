@@ -1,0 +1,47 @@
+version: "3.8"
+name: iotconnect_infra
+services:
+  mongo_db:
+    container_name: iotconnect-db
+    restart: always
+    image: instyga/iotconnect-db:1.0
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_DATABASE=iotconnect
+    networks:
+      - network_iotconnect
+
+  backend:
+    container_name: iotconnect-api
+    image: "instyga/iotconnect-backend:1.0"
+    ports:
+      - "3030:3030"
+    environment:
+      DB_URI_CONNECTION: mongodb://iotconnect-db:27017/iotconnect
+      PORT: 3030
+      SECRET: thesecret
+    depends_on:
+      - mongo_db
+    networks:
+      - network_iotconnect
+
+  # frontend:
+  #   container_name: front_iotconnect
+  #   build:
+  #     context: ./
+  #     dockerfile: Dockerfile
+  #     args:
+  #       API_URL: ${API_URL}
+  #       WEATHER_API_KEY: ${WEATHER_API_KEY}
+  #   environment:
+  #     PORT: ${PORT}
+  #   ports:
+  #     - "3000:${PORT}"
+  #   depends_on:
+  #     - backend
+  #   networks:
+  #     - network_iotconnect
+
+networks:
+  network_iotconnect:
