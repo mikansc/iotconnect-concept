@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest --silent",
+    "test": "vitest --silent --watch=false",
     "test:verbose": "vitest",
     "test:coverage": "vitest --coverage",
     "test:cy": "npx cypress open --e2e --browser chrome",
@@ -40,8 +40,8 @@
     "@testing-library/user-event": "^14.4.3",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
-    "@vitejs/plugin-react": "^2.1.0",
-    "@vitest/coverage-c8": "^0.23.4",
+    "@vitejs/plugin-react": "^4.3.1",
+    "@vitest/coverage-v8": "^1.6.0",
     "cypress": "^13.12.0",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.5.0",
@@ -58,6 +58,6 @@
     "start-server-and-test": "^1.15.2",
     "vite": "^3.1.0",
     "vite-plugin-eslint": "^1.8.1",
-    "vitest": "^0.23.4"
+    "vitest": "^1.6.0"
   }
 }

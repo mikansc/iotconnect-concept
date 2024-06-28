@@ -18,14 +18,20 @@ export default defineConfig({
     globals: true,
     environment: "jsdom",
     setupFiles: "./src/setup-test.js",
-    reporters: "verbose",
+    reporters: [
+      "verbose",
+      "json",
+      ["junit", { suiteName: "custom suite name", classname: "custom-classname" }],
+    ],
+    outputFile: { junit: "results/unit-vitest.xml", json: "results/unit-vitest.json" },
     coverage: {
-      provider: "c8",
-      lines: 95,
-      branches: 95,
-      functions: 95,
-      statements: 95,
-      logHeapUsage: true,
+      provider: "v8",
+      thresholds: {
+        lines: 95,
+        branches: 95,
+        functions: 95,
+        statements: 95,
+      },
       exclude: [
         "**/*.styles.js",
         "src/test-utils/*.{js,jsx}",

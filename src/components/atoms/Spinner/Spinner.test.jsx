@@ -7,7 +7,7 @@ describe('@atom/Separator', () => {
     render(<Spinner />)
     expect(screen.getByTestId('app-spinner')).toMatchInlineSnapshot(`
       <div
-        class="sc-bczRLJ ixkRUT"
+        class="sc-bczRLJ gMwMIq"
         data-testid="app-spinner"
       />
     `)

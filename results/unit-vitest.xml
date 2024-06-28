@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="custom suite name" tests="51" failures="0" errors="0" time="10.127">
+    <testsuite name="src/hooks/__tests__/useAuthentication.test.js" timestamp="2024-06-28T16:35:52.811Z" hostname="MK-DESKTOP01" tests="3" failures="0" errors="0" skipped="0" time="0.033">
+        <testcase classname="custom-classname" name="@hooks/useAuthentication &gt; should return initial funcs correctly" time="0.02">
+        </testcase>
+        <testcase classname="custom-classname" name="@hooks/useAuthentication &gt; when it has no user authenticated &gt; should return initial props correctly" time="0.003">
+        </testcase>
+        <testcase classname="custom-classname" name="@hooks/useAuthentication &gt; when it has an authenticated user &gt; should return initial props correctly" time="0.006">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/components/atoms/Button/Button.test.jsx" timestamp="2024-06-28T16:35:52.820Z" hostname="MK-DESKTOP01" tests="4" failures="0" errors="0" skipped="0" time="0.156">
+        <testcase classname="custom-classname" name="@atom/Button &gt; should render button with children" time="0.066">
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Button &gt; should be disabled when disable=true" time="0.01">
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Button &gt; should be full width when fullWidth=true" time="0.064">
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Button &gt; should be auto width when fullWidth=false" time="0.014">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/components/atoms/Button/ButtonGroup.test.jsx" timestamp="2024-06-28T16:35:52.822Z" hostname="MK-DESKTOP01" tests="2" failures="0" errors="0" skipped="0" time="0.082">
+        <testcase classname="custom-classname" name="@atom/ButtonGroup &gt; should render with children" time="0.064">
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/ButtonGroup &gt; should match snapshot" time="0.014">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/components/atoms/Icon/Icon.test.jsx" timestamp="2024-06-28T16:35:52.824Z" hostname="MK-DESKTOP01" tests="6" failures="0" errors="0" skipped="0" time="0.169">
+        <testcase classname="custom-classname" name="@atom/Icon &gt; should render icon properly" time="0.063">
+            <system-err>
+Warning: Failed prop type: The prop `name` is marked as required in `Icon`, but its value is `undefined`.
+    at Icon (D:\workspaces\javascript\react\connectlab\connectlab\src\components\atoms\Icon\Icon.jsx:7:17)
+
+            </system-err>
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Icon &gt; should match color property" time="0.061">
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Icon &gt; should match size property" time="0.015">
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Icon &gt; should inherit size when no size is specified" time="0.012">
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Icon &gt; should match name properly" time="0.009">
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Icon &gt; should render with question_mark if no name is provided" time="0.006">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/components/atoms/Image/Image.test.jsx" timestamp="2024-06-28T16:35:52.828Z" hostname="MK-DESKTOP01" tests="2" failures="0" errors="0" skipped="0" time="0.064">
+        <testcase classname="custom-classname" name="@atom/Image &gt; should render an img tag" time="0.054">
+            <system-err>
+Warning: Failed prop type: The prop `src` is marked as required in `Image`, but its value is `undefined`.
+    at Image (D:\workspaces\javascript\react\connectlab\connectlab\src\components\atoms\Image\Image.jsx:7:18)
+Warning: Failed prop type: The prop `alt` is marked as required in `Image`, but its value is `undefined`.
+    at Image (D:\workspaces\javascript\react\connectlab\connectlab\src\components\atoms\Image\Image.jsx:7:18)
+
+            </system-err>
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Image &gt; should receive src and alt props" time="0.008">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/components/atoms/Input/Input.test.jsx" timestamp="2024-06-28T16:35:52.830Z" hostname="MK-DESKTOP01" tests="6" failures="0" errors="0" skipped="0" time="0.561">
+        <testcase classname="custom-classname" name="@atom/Input &gt; should render a text input tag" time="0.138">
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Input &gt; should render with default styles when hasError=false" time="0.033">
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Input &gt; should render an error input when hasError=true" time="0.037">
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Input &gt; should receive onChange prop correctly" time="0.262">
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Input &gt; should receive value prop correctly" time="0.06">
+            <system-err>
+Warning: You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`.
+    at input
+    at I (D:\workspaces\javascript\react\connectlab\connectlab\node_modules\styled-components\dist\styled-components.cjs.js:1:19220)
+    at D:\workspaces\javascript\react\connectlab\connectlab\src\components\atoms\Input\Input.jsx:10:119
+    at exports.ThemeProvider (D:\workspaces\javascript\react\connectlab\connectlab\node_modules\styled-components\dist\styled-components.cjs.js:1:24917)
+    at AllTheProviders (D:\workspaces\javascript\react\connectlab\connectlab\src\test-utils\index.jsx:42:28)
+
+            </system-err>
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Input &gt; should receive type prop correctly" time="0.027">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/components/atoms/Label/Label.test.jsx" timestamp="2024-06-28T16:35:52.833Z" hostname="MK-DESKTOP01" tests="5" failures="0" errors="0" skipped="0" time="0.184">
+        <testcase classname="custom-classname" name="@atom/Label &gt; should render a label tag and its children" time="0.071">
+            <system-err>
+Warning: Failed prop type: The prop `htmlFor` is marked as required in `Label`, but its value is `undefined`.
+    at Label (D:\workspaces\javascript\react\connectlab\connectlab\src\components\atoms\Label\Label.jsx:7:18)
+
+            </system-err>
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Label &gt; should render a label with htmlFor property" time="0.01">
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Label &gt; should match color property" time="0.066">
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Label &gt; should render with default styles when hasError=false" time="0.016">
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Label &gt; should render an error input when hasError=true" time="0.017">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/components/atoms/Logo/Logo.test.jsx" timestamp="2024-06-28T16:35:52.835Z" hostname="MK-DESKTOP01" tests="4" failures="0" errors="0" skipped="0" time="0.082">
+        <testcase classname="custom-classname" name="@atom/Logo &gt; should render an img tag" time="0.053">
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Logo &gt; should have a src path" time="0.007">
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Logo &gt; should have the correct alt text" time="0.006">
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Logo &gt; should match snapshot" time="0.013">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/components/atoms/Paper/Paper.test.jsx" timestamp="2024-06-28T16:35:52.836Z" hostname="MK-DESKTOP01" tests="2" failures="0" errors="0" skipped="0" time="0.092">
+        <testcase classname="custom-classname" name="@atom/Paper &gt; should render with children" time="0.078">
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Paper &gt; should match snapshot" time="0.01">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/components/atoms/Pill/Pill.test.jsx" timestamp="2024-06-28T16:35:52.837Z" hostname="MK-DESKTOP01" tests="2" failures="0" errors="0" skipped="0" time="0.079">
+        <testcase classname="custom-classname" name="@atom/Pill &gt; should render with children" time="0.058">
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Pill &gt; should match snapshot" time="0.019">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/components/atoms/Select/Select.test.jsx" timestamp="2024-06-28T16:35:52.839Z" hostname="MK-DESKTOP01" tests="5" failures="0" errors="0" skipped="0" time="0.467">
+        <testcase classname="custom-classname" name="@atom/Select &gt; should render a select tag" time="0.162">
+            <system-err>
+Warning: Failed prop type: The prop `children` is marked as required in `Select`, but its value is `undefined`.
+    at D:\workspaces\javascript\react\connectlab\connectlab\src\components\atoms\Select\Select.jsx:9:52
+
+            </system-err>
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Select &gt; should render with default styles when hasError=false" time="0.055">
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Select &gt; should render an error input when hasError=true" time="0.059">
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Select &gt; should render options" time="0.025">
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Select &gt; should receive onChange prop correctly" time="0.158">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/components/atoms/Separator/Separator.test.jsx" timestamp="2024-06-28T16:35:52.841Z" hostname="MK-DESKTOP01" tests="1" failures="0" errors="0" skipped="0" time="0.031">
+        <testcase classname="custom-classname" name="@atom/Separator &gt; should match snapshot" time="0.03">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/components/atoms/Spinner/Spinner.test.jsx" timestamp="2024-06-28T16:35:52.841Z" hostname="MK-DESKTOP01" tests="1" failures="0" errors="0" skipped="0" time="0.032">
+        <testcase classname="custom-classname" name="@atom/Separator &gt; should match snapshot" time="0.031">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/components/atoms/Toggle/Toggle.test.jsx" timestamp="2024-06-28T16:35:52.842Z" hostname="MK-DESKTOP01" tests="3" failures="0" errors="0" skipped="0" time="0.338">
+        <testcase classname="custom-classname" name="@atom/Input &gt; should render a checkbox input tag" time="0.17">
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Input &gt; should receive onChange prop correctly" time="0.12">
+        </testcase>
+        <testcase classname="custom-classname" name="@atom/Input &gt; should receive value prop correctly" time="0.041">
+            <system-err>
+Warning: You provided a `checked` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultChecked`. Otherwise, set either `onChange` or `readOnly`.
+    at input
+    at I (D:\workspaces\javascript\react\connectlab\connectlab\node_modules\styled-components\dist\styled-components.cjs.js:1:19220)
+    at div
+    at I (D:\workspaces\javascript\react\connectlab\connectlab\node_modules\styled-components\dist\styled-components.cjs.js:1:19220)
+    at Toggle
+    at exports.ThemeProvider (D:\workspaces\javascript\react\connectlab\connectlab\node_modules\styled-components\dist\styled-components.cjs.js:1:24917)
+    at AllTheProviders (D:\workspaces\javascript\react\connectlab\connectlab\src\test-utils\index.jsx:42:28)
+
+            </system-err>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/i18n/formatters/__tests__/full_date.test.js" timestamp="2024-06-28T16:35:52.843Z" hostname="MK-DESKTOP01" tests="3" failures="0" errors="0" skipped="0" time="0.131">
+        <testcase classname="custom-classname" name="formatDate &gt; should format date in pt-BR" time="0.121">
+        </testcase>
+        <testcase classname="custom-classname" name="formatDate &gt; should format date in en-US" time="0.006">
+        </testcase>
+        <testcase classname="custom-classname" name="formatDate &gt; should format date in es-ES" time="0.003">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/i18n/formatters/__tests__/temperature.test.js" timestamp="2024-06-28T16:35:52.844Z" hostname="MK-DESKTOP01" tests="2" failures="0" errors="0" skipped="0" time="0.008">
+        <testcase classname="custom-classname" name="formatTemperature &gt; should format temperature in celsius" time="0.004">
+        </testcase>
+        <testcase classname="custom-classname" name="formatTemperature &gt; should format temperature in farenheit" time="0">
+        </testcase>
+    </testsuite>
+</testsuites>

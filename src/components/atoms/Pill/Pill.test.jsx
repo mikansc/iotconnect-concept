@@ -12,7 +12,7 @@ describe('@atom/Pill', () => {
     render(<Pill>Pill Content</Pill>)
     expect(screen.getByText(/Pill Content/)).toMatchInlineSnapshot(`
       <span
-        class="sc-bczRLJ ivrWbK"
+        class="sc-bczRLJ kHwEof"
       >
         Pill Content
       </span>
